@@ -17,24 +17,14 @@ def generate_random_book():
         "Python Basics",
         "Dark Ocean",
         "Future City",
-        "Silent Night"
+        "Silent Night",
     ]
 
-    authors = [
-        "John Smith",
-        "Alice Brown",
-        "Michael Lee",
-        "Emma Wilson",
-        "David Clark"
-    ]
+    authors = ["John Smith", "Alice Brown", "Michael Lee", "Emma Wilson", "David Clark"]
 
     year = random.randint(1950, 2025)
 
-    return Book(
-        random.choice(titles),
-        random.choice(authors),
-        year
-    )
+    return Book(random.choice(titles), random.choice(authors), year)
 
 
 book = generate_random_book()
