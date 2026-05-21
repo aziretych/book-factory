@@ -20,9 +20,15 @@ def generate_random_book():
         "Silent Night",
     ]
 
-    authors = ["John Smith", "Alice Brown", "Michael Lee", "Emma Wilson", "David Clark"]
+    authors = [""
+        "John Smith",
+        "Alice Brown",
+        "Michael Lee",
+        "Emma Wilson",
+        "David Clark"
+    ]
 
-    year = random.randint(1950, 2025)
+    year = random.randint(1899, 2026)
 
     return Book(random.choice(titles), random.choice(authors), year)
 
